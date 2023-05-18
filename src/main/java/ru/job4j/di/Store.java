@@ -1,0 +1,19 @@
+package ru.job4j.di;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Oywayten 18.05.2023.
+ */
+public class Store {
+    private List<String> data = new ArrayList<>();
+
+    public void add(String value) {
+        data.add(value);
+    }
+
+    public List<String> getAll() {
+        return data;
+    }
+}
