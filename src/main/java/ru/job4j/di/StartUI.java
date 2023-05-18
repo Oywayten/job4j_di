@@ -1,8 +1,11 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Oywayten 18.05.2023.
  */
+@Component
 public class StartUI {
 
     private Store store;

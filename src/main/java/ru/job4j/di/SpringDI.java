@@ -10,9 +10,7 @@ import static ru.job4j.di.Main.WHAT_S_YOUR_NAME;
 public class SpringDI {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(Store.class);
-        context.register(ConsoleInput.class);
-        context.register(StartUI.class);
+        context.scan("ru.job4j.di");
         context.refresh();
         StartUI ui = context.getBean(StartUI.class);
         String answer = ui.askString(WHAT_S_YOUR_NAME);

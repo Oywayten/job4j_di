@@ -1,11 +1,14 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Oywayten 18.05.2023.
  */
+@Component
 public class Store {
     private List<String> data = new ArrayList<>();
 
