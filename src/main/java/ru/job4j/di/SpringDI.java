@@ -16,7 +16,11 @@ public class SpringDI {
         String answer = ui.askString(WHAT_S_YOUR_NAME);
         ui.add(answer);
         ui.add("Petr Arsentev");
-        ui.add("Ivan ivanov");
+        StartUI newUi = context.getBean(StartUI.class);
+        newUi.add("Ivan ivanov");
         ui.print();
+        System.out.println("newUi print:");
+        newUi.print();
+
     }
 }
