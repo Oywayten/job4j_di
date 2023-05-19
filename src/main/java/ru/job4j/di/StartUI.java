@@ -25,6 +25,7 @@ public class StartUI {
     }
 
     public String askString(String question) {
+        question = String.format("%s%s", question, System.lineSeparator());
         return consoleInput.askStr(question);
     }
 

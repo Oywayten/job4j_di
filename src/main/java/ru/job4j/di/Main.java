@@ -4,7 +4,7 @@ package ru.job4j.di;
  * Oywayten 18.05.2023.
  */
 public class Main {
-    public static final String WHAT_S_YOUR_NAME = "What's your name?\n";
+    public static final String WHAT_S_YOUR_NAME = "What's your name?";
 
     public static void main(String[] args) {
         Context context = new Context();
