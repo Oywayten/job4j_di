@@ -8,4 +8,4 @@ COPY . .
 
 RUN mvn install
 
-CMD ["java", "-jar", "target/main.jar"]
+CMD ["java", "-jar", "target/SpringDI.jar"]
